@@ -1,18 +1,17 @@
 ---
-title: NCS Green Earth Pvt. Ltd.
+title: The Bath & Kitchen
 seo_keywords: Green Earth
 seo_description: Green Earth
 paragrap_title: about
 paragrap_link: about
 product_title: Our Products
+google_map_coordinates: '22.5720522,88.35130509999999'
 slides:
   - image: /images/slide1.jpg
-  - image: /images/article.jpg
+  - image: /images/slide2.jpg
   - image: /images/slide3.jpg
-  - image: /images/1112-copy.jpg
-  - image: /images/super-soil-structure.jpg
-  - image: /images/super-structure.jpg
-  - image: /images/production-plus.jpg
+  - image: /images/slide4.jpg
+  - image: /images/slide5.jpg
 ---
 We believe the world is moving to **Green Chemistry** driven by **Microbes**. That seems to be the only way to crawl out of the toxic chemical mess we have created around us. We at **NCS Green Earth** has clear focus on applying Green Chemistry for **Agriculture** \[Soil, Roots, Nutrition, Pest & Diseases], **Industrial Waste Treatment** \[Effluent Treatment, Sewage Treatment etc], **Bio-Remediation** \[Land remediation, Solid Waste Management etc.] & **Home & Industrial Cleaning**. 
 

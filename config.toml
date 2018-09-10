@@ -1,4 +1,4 @@
-baseURL = "https://ncsgreenearth.netlify.com/"
+baseURL = "https://bathkitchen.netlify.com/"
 languageCode = "en-us"
-title = "Green Earth"
-theme = "sm-greenearth"
+title = "The Bath & Kitchen"
+theme = "sm-bath-kitchen"

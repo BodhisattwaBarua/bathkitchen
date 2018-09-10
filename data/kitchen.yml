@@ -1,0 +1,6 @@
+kitchen:
+  - image: images/8.png
+  - image: images/9.jpg
+  - image: images/3.jpg
+  - image: images/1.png
+  - image: images/6.png

@@ -1,0 +1,173 @@
+{{ partial "header.html" . }}
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOp_b26dWumYiB9Pc3EwrC-FEPP2CkgGk" data-turbolinks-eval="false"></script>
+<script src="{{ "js/siema.min.js" | absURL }}"></script>
+<section id="slider" class="siema">
+	{{ range .Params.slides }}
+	<figure class="image is-3by1">
+		<img src="{{(trim .image "/") | absURL }}">
+	</figure>
+	{{ end }}
+</section>
+<section class="section notification">
+	<div class="container is-fluid ">
+		<h1 class="title has-text-centered is-uppercase is-size-1">
+		{{ .Params.paragrap_title }}
+		</h1>
+		{{ .Content }}
+		<div class="has-text-centered">
+			<a href="/" class="button is-outlined is-link" style="margin-top: 20px;">
+			Read More </a>
+		</div>
+	</div>
+</section>
+<section class="section">
+	<div class="columns">
+     	<div class="column is-6" >
+     		<div class="box" style="">
+     			<div class="subtitle has-text-centered has-text-weight-bold">Bathroom Partner Brands</div>
+     			<div class="columns is-multiline gallery mb-std">
+	      			{{ range .Site.Data.bathroom.bathroom }}
+				      <div class="column is-one-third">
+				        <div class="is-block box is-shadowless is-paddingless" >
+				          <div class="content">
+				            <figure class="image is-128x128">
+  								<img src="{{(trim .image "/") | absURL }}">
+							</figure>
+				          </div>
+				        </div>        
+				      </div>
+	      			{{end}}
+    			</div>
+     		</div>
+      	</div>
+     	<div class="column is-6" >
+     		<div class="box">
+     			<div class="subtitle has-text-centered has-text-weight-bold">Kitchen Partner Brands</div>
+     			<div class="columns is-multiline gallery mb-std">
+	      			{{ range .Site.Data.kitchen.kitchen }}
+				      <div class="column is-one-third">
+				        <div class="is-block box is-shadowless is-paddingless" >
+				          <div class="content">
+				            <figure class="image is-128x128">
+  								<img src="{{(trim .image "/") | absURL }}">
+							</figure>
+				          </div>
+				        </div>        
+				      </div>
+	      			{{end}}
+    			</div>
+     		</div>
+      	</div>
+    </div>
+</section>
+
+<!-- Contact Us and Google Map Start -->
+
+<section class="section">
+	<div class="columns">
+     	<div class="column is-6" >
+     		<div class="box" style="">
+     			<div class="subtitle has-text-centered has-text-weight-bold">Contact Us</div>
+     				<form name="contact" netlify>
+						<div class="field">
+							<label class="label">NAME</label>
+							<div class="control">
+								<input class="input is-medium is-info" name="name" id="name"
+								type="text" placeholder="Enter Your Name" required>
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">EMAIL</label>
+							<div class="control ">
+								<input class="input is-medium is-info" name= "email" id="email"
+								type="email" placeholder="Enter Your Email" required>
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">CONTACT NO</label>
+							<div class="control ">
+								<input class="input is-medium is-info" name="contact_no"
+								id="contact_no" type="text" placeholder="Enter Your Phone No." required>
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">MESSAGE</label>
+							<div class="control ">
+								<textarea class="textarea is-info" name="message" id= "message" placeholder="Enter Your Message" required></textarea>
+							</div>
+						</div>
+						<div class="control">
+							<button class="button is-info is-outlined is-medium" type="submit">
+							Submit</button>
+						</div>
+					</form>
+     			</div>
+      	</div>
+     	<div class="column is-6" >
+     		<div class="box">
+     			<div class="map-slope" id="map-canvas" style="min-height: 525px;"></div>
+     		</div>
+      	</div>
+    </div>
+</section>
+
+<!-- Contact Us and Google Map End -->
+{{ partial "footer.html" . }}
+<script>
+if(siema_interval){
+clearInterval(siema_interval)
+}
+var mySiema=new Siema({duration:250,loop:true,});
+var siema_interval = setInterval(()=>mySiema.next(),5000)
+document.addEventListener('DOMContentLoaded', function () {
+var simple = document.querySelector('.js_simple');
+lory(simple, {
+rewind: true
+});
+});
+
+	function initialize() {
+	var gmc = {{.Params.google_map_coordinates}}
+	var myLatlng = new google.maps.LatLng(gmc.split(",")[0], gmc.split(",")[1]);
+	var mapOptions = {
+	center: myLatlng,
+	zoom: 18,
+	scrollwheel: false,
+	styles: [{
+	featureType: 'all',
+	stylers: [{
+	hue: '#dddddd'
+	},
+	{
+	saturation: 70
+	}
+	]
+	}, {
+	featureType: 'road.arterial',
+	elementType: 'geometry',
+	stylers: [{
+	hue: '#eeeeee'
+	},
+	{
+	saturation: 90
+	}
+	]
+	}, {
+	featureType: 'poi.business',
+	elementType: 'labels',
+	stylers: [{
+	visibility: 'off'
+	}]
+	}]
+	};
+	var map = new google.maps.Map(document.getElementById('map-canvas'),
+	mapOptions);
+	var marker = new google.maps.Marker({
+	position: myLatlng,
+	map: map
+	});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	google.maps.event.addDomListener(window, 'page:load', initialize);
+
+</script>
