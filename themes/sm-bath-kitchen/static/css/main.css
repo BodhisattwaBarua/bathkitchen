@@ -98,13 +98,19 @@ h4 {
 }
 .movie-list-row {
     display: block;
+    /* border-bottom: solid #dbdbdb 1px; */
+    /* margin-bottom: 1em; */
+    padding-bottom: 1em;
+}
+.footer-menu-list-row {
+    display: block;
     border-bottom: solid #dbdbdb 1px;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     padding-bottom: 1em;
 }
 .movie-row {
     display: block;
-    border-bottom: solid red 2px;
+    /* border-bottom: solid red 1px; */
     margin-bottom: 1em;
 }
 .sidelink
@@ -119,10 +125,9 @@ h4 {
     transition-duration: .3s;
     font-size: .85rem;
    }
-.sidelink:hover, .sidelink.active {
-    color: hsl(171, 100%, 41%);
-    font-weight: bold;
- 	}
+.sidelink:hover, .sidelink.active{
+	color: hsl(0, 0%, 7%);
+}
 .newslink
  {
  	text-decoration: none;
@@ -156,10 +161,10 @@ h4 {
     display: block;
     font-weight: normal;
    }
-.studiolink:hover, .studiolink.active {
+/* .studiolink:hover, .studiolink.active {
     color: hsl(204, 86%, 53%);
     border-bottom-color: hsl(204, 86%, 53%);
- 	}
+ 	} */
 .tabs a:hover {
     border-bottom-color: hsl(204, 86%, 53%);
     color: hsl(204, 86%, 53%);
