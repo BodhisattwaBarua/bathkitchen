@@ -19,12 +19,11 @@ collections:
         - {label: Paragrap Link, name: paragrap_link, widget: string, required: false}
         - {label: Content, name: body, widget: markdown, required: false}
         - {label: Google Map Coordinates, name: google_map_coordinates, widget: string}
-        - {label: Featured Image, name: featured_image, widget: image}
-        - {label: Business Name, name: business_name, widget: string}
-        - {label: Address, name: address, widget: text}
-        - {label: Telephone No, name: phone, widget: string}
-        - {label: Phone No, name: mobile, widget: string}
-        - {label: Email, name: email, widget: string}
+        - {label: Business Name, name: business_name, widget: string, required: false}
+        - {label: Address, name: address, widget: text, required: false}
+        - {label: Telephone No, name: phone, widget: string, required: false}
+        - {label: Phone No, name: mobile, widget: string, required: false}
+        - {label: Email, name: email, widget: string, required: false}
         - label: Slides
           name: slides
           widget: list
