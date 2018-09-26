@@ -4,7 +4,6 @@ seo_title: The Bath & Kitchen
 seo_keywords: The Bath & Kitchen
 seo_description: The Bath & Kitchen
 paragrap_title: about
-paragrap_link: about
 google_map_coordinates: '22.5720522,88.35130509999999'
 featured_image: /images/slide5.jpg
 business_name: The Bath & Kitchen
