@@ -43,11 +43,11 @@ collections:
           fields:
             - {label: Image, name: image, widget: image}
     - label: "Kitchen Partner Brands"
-      name: "Kitchen"
+      name: "kitchen"
       file: "data/kitchen.yml"
       fields:
         - label: Kitchen Partner Brands
-          name: Kitchen
+          name: kitchen
           widget: list
           fields:
             - {label: Image, name: image, widget: image}
