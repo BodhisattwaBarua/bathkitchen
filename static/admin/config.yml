@@ -4,79 +4,6 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 collections:
-- label: "Agriculture"
-  name: "agriculture"
-  folder: "content/agriculture"
-  create: true
-  fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Seo Title, name: seo_title, widget: string, required: false}
-    - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-    - {label: Seo Description, name: seo_description, widget: text, required: false}
-    - {label: Featured Image, name: featured_image, widget: image, required: false}
-    - {label: Content, name: body, widget: markdown, required: false}
-    - label: "Type"
-      name: "type"
-      required: false
-      widget: "select"
-      options: ["agriculture", "crop_advisory","two_column_template", "three_column_template", "three_grid_template"]
-    - label: Header
-      name: header
-      required: false
-      widget: list
-      fields:
-        - {label: Header Title, name: header_title, widget: string, required: false}
-    - label: Details
-      name: details
-      required: false
-      widget: list
-      fields:
-        - {label: Name, name: name, widget: string, required: false}
-        - {label: Image, name: image, widget: image, required: false}
-        - {label: Profile File, name: profile_file, widget: file, required: false}
-        - {label: Action, name: action, widget: text, required: false}
-- label: "About"
-  name: "about"
-  folder: "content/about"
-  create: true
-  fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Seo Title, name: seo_title, widget: string, required: false}
-    - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-    - {label: Seo Description, name: seo_description, widget: text, required: false}
-    - {label: Featured Image, name: featured_image, widget: image, required: false}
-    - {label: Content, name: body, widget: markdown, required: false}
-- label: "Bio Cleaners"
-  name: "bio cleaners"
-  folder: "content/bio_cleaners"
-  fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Seo Title, name: seo_title, widget: string, required: false}
-    - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-    - {label: Seo Description, name: seo_description, widget: text, required: false}
-    - {label: Featured Image, name: featured_image, widget: image, required: false}
-    - {label: Content Header, name: content_header, widget: text, required: false}
-    - {label: Content, name: body, widget: markdown, required: false}
-    - {label: Table Header, name: table_header, widget: text, required: false}
-    - label: Formulations
-      name: formulations
-      widget: list
-      fields:
-        - {label: Name, name: name, widget: text, required: false}
-- label: "Contact Page"
-  name: "contact"
-  folder: "content/contact"
-  fields:
-    - {label: Title, name: title, widget: string}
-    - {label: Seo Title, name: seo_title, widget: string, required: false}
-    - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-    - {label: Seo Description, name: seo_description, widget: text, required: false}
-    - {label: Google Map Coordinates, name: google_map_coordinates, widget: string, required: false}
-    - {label: Business Name, name: business_name, widget: string, required: false}
-    - {label: Address, name: address, widget: text, required: false}
-    - {label: Phone No, name: mobile, widget: string, required: false}
-    - {label: Email, name: email, widget: string, required: false}
-
 - label: "Pages"
   name: "pages"
   files:
@@ -92,6 +19,14 @@ collections:
         - {label: Paragrap Link, name: paragrap_link, widget: string, required: false}
         - {label: Content, name: body, widget: markdown, required: false}
         - {label: Product Title, name: product_title, widget: string, required: false}
+        - {label: Google Map Coordinates, name: google_map_coordinates, widget: string}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Business Name, name: business_name, widget: string}
+        - {label: Address, name: address, widget: text}
+        - {label: Telephone No, name: phone, widget: string}
+        - {label: Phone No, name: mobile, widget: string}
+        - {label: Email, name: email, widget: string}
+        - {label: Content, name: body, widget: markdown}
         - label: Slides
           name: slides
           widget: list
@@ -100,18 +35,24 @@ collections:
 - label: "Data"
   name: "data"
   files:
-    - label: "Services"
-      name: "services"
-      file: "data/services.yml"
+    - label: "Bathroom Partner Brands"
+      name: "bathroom"
+      file: "data/bathroom.yml"
       fields:
-        - label: Services
-          name: services
+        - label: Bathroom Partner Brands
+          name: bathroom
           widget: list
           fields:
-            - {label: Name, name: name, widget: string, required: false}
-            - {label: Image, name: image, widget: image, required: false}
-            - {label: Content, name: content, widget: markdown, required: false}
-            - {label: Link, name: link, widget: string, required: false}
+            - {label: Image, name: image, widget: image}
+    - label: "Kitchen Partner Brands"
+      name: "Kitchen"
+      file: "data/Kitchen.yml"
+      fields:
+        - label: Kitchen Partner Brands
+          name: Kitchen
+          widget: list
+          fields:
+            - {label: Image, name: image, widget: image}
 
     - label: "Meta"
       name: "meta"

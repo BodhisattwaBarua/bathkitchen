@@ -6,6 +6,12 @@ paragrap_title: about
 paragrap_link: about
 product_title: Our Products
 google_map_coordinates: '22.5720522,88.35130509999999'
+business_name: The Bath & Kitchen
+address: |-
+  M7, MIDC, Hingna,
+  Nagpur-440016, India
+mobile: +91-712-235144
+email: 
 slides:
   - image: /images/slide1.jpg
   - image: /images/slide2.jpg

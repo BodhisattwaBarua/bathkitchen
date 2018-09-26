@@ -112,19 +112,177 @@
 </section>
 
 <!-- Contact Us and Google Map End -->
+<footer class="footer has-text-grey-lighter">
+	<div class="columns">
+  		<div class="column">
+  			<div class="movie-row">
+				<p class="is-size-5 is-uppercase has-text-weight-semibold has-text-black">
+				Main Links</a>
+			</div>
+    		<ul>
+	    		<li>
+	    			<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Home</a>
+								</div>
+							</span>
+						</span>
+					</div>
+	    		</li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">About Us</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Products</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Gallery</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Contact</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+	  		</ul>
+  		</div>
+  		<div class="column">
+    		<div class="movie-row">
+				<p class="is-size-5 is-uppercase has-text-weight-semibold has-text-black">
+				Products</a>
+			</div>
+	    	<ul>
+	    		<li>
+	    			<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Sanitary Ware</a>
+								</div>
+							</span>
+						</span>
+					</div>
+	    		</li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Bath Fitting</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Shower Panels/ Cubicles</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Bath Accessories</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">UPVC/ CPVC</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+			    <li>
+			    	<div class="has-text-black movie-list-row">
+		    			<span class="columns is-mobile is-variable is-1">
+							<span class="column">
+								<div class="columns is-mobile is-gapless is-marginless">
+									<a href="" class=" column sidelink has-text-weight-semibold">Kitchen Products</a>
+								</div>
+							</span>
+						</span>
+					</div>
+			    </li>
+	  		</ul>
+  		</div>
+	    <div class="column">
+	    	<p class="is-size-5 is-uppercase has-text-weight-semibold has-text-black">Blogs</p>
+	    </div>
+  		<div class="column">
+    		<div class="movie-row">
+				<p class="is-size-5 is-uppercase has-text-weight-semibold has-text-black">
+				Contact Us</a>
+			</div>
+
+	        <address class="">
+	          <p class="has-text-black has-text-weight-semibold is-size-5">{{.Params.business_name}}</p>
+	          <div class="has-text-black">{{ replace .Params.address "\n" "<br>" | safeHTML }}</div>
+	          <div class="has-text-black">Tel: {{.Params.phone}}</div>
+	          <div class="has-text-black">Mobile: {{.Params.mobile}}</div>
+	          <div class="has-text-black">Email: <a href="mailto:{{.Params.email}}" class="">{{.Params.email}}</a></div>
+	        </address>
+  		</div>
+	</div>
+</footer>
 {{ partial "footer.html" . }}
 <script>
 if(siema_interval){
-clearInterval(siema_interval)
-}
-var mySiema=new Siema({duration:250,loop:true,});
-var siema_interval = setInterval(()=>mySiema.next(),5000)
-document.addEventListener('DOMContentLoaded', function () {
-var simple = document.querySelector('.js_simple');
-lory(simple, {
-rewind: true
-});
-});
+	clearInterval(siema_interval)
+	}
+	var mySiema=new Siema({duration:250,loop:true,});
+	var siema_interval = setInterval(()=>mySiema.next(),5000)
+	document.addEventListener('DOMContentLoaded', function () {
+		var simple = document.querySelector('.js_simple');
+		lory(simple, {
+		rewind: true
+		});
+	});
 
 	function initialize() {
 	var gmc = {{.Params.google_map_coordinates}}
