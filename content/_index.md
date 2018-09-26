@@ -1,17 +1,19 @@
 ---
 title: The Bath & Kitchen
-seo_keywords: Green Earth
-seo_description: Green Earth
+seo_title: The Bath & Kitchen
+seo_keywords: The Bath & Kitchen
+seo_description: The Bath & Kitchen
 paragrap_title: about
 paragrap_link: about
-product_title: Our Products
 google_map_coordinates: '22.5720522,88.35130509999999'
+featured_image: /images/slide5.jpg
 business_name: The Bath & Kitchen
 address: |-
   M7, MIDC, Hingna,
   Nagpur-440016, India
+phone: +91-712-235144
 mobile: +91-712-235144
-email: 
+email: bathandkitchen@gmail.com
 slides:
   - image: /images/slide1.jpg
   - image: /images/slide2.jpg
