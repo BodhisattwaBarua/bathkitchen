@@ -1,17 +1,22 @@
 ---
 title: The Bath & Kitchen
 seo_title: The Bath & Kitchen
-seo_keywords: The Bath & Kitchen
-seo_description: The Bath & Kitchen
-paragrap_title: about
+seo_keywords: >-
+  The Bath & Kitchen, The bath, The Kitchen, Bathroom fittings,  CP fittings,
+  CPVC, UPVC, SWR Pipes, Kitchen fittings, Kitchen Sinks, Noida, Noida Sector
+  110, Noida Sector 104, Noida Sector 93, Noida Sector 82
+seo_description: >-
+  The Bath & Kitchen, The bath, The Kitchen, Bathroom fittings,  CP fittings,
+  CPVC, UPVC, SWR Pipes, Kitchen fittings, Kitchen Sinks, Noida, Noida Sector
+  110, Noida Sector 104, Noida Sector 93, Noida Sector 82
+paragrap_title: "Who are we \U0001F60A\U0001F60A"
 google_map_coordinates: '22.5720522,88.35130509999999'
-featured_image: /images/slide5.jpg
 business_name: The Bath & Kitchen
-address: |-
-  M7, MIDC, Hingna,
-  Nagpur-440016, India
-phone: +91-712-235144
-mobile: +91-712-235144
+address: >
+  Numberdar Market, Shop No. #2, Gheja Road, Near Yatarth Hospital, Sector 110,
+  201304, Noida, U.P.
+phone: ''
+mobile: '+91 8448505951, +91 9304008274'
 email: bathandkitchen@gmail.com
 slides:
   - image: /images/slide1.jpg
@@ -20,9 +25,6 @@ slides:
   - image: /images/slide4.jpg
   - image: /images/slide5.jpg
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"The Bath & Kitchen" store cum experience centre itself defines about its presense and identity. We keep it very generic to be undersood by everyone and connect well with all group of audiances building their bathrooms and kitchen.
+
+The shop owner has vast experiance over 40 years into the business and understand well the smallest hack to guide the customer best possible way to save some bucks.
