@@ -1,9 +1,6 @@
 bathroom:
-  - image: images/1.png
-  - image: images/2.png
-  - image: images/3.jpg
-  - image: images/5.png
-  - image: images/6.png
   - image: /images/201507291438180541700.gif
-  - {}
-  - {}
+  - image: /images/blue-logo-copy.png
+  - image: /images/supreme_industries_logo-svg.png
+  - image: /images/hindware-bath-fittings-500x500.jpg
+  - image: /images/56-prayag.jpg
