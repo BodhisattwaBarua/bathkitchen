@@ -16,7 +16,7 @@ address: >
   Numberdar Market, Shop No. #2, Gheja Road, Near Yatarth Hospital, Sector 110,
   201304, Noida, U.P.
 phone: ''
-mobile: '+91 8448505951, +91 9304008274'
+mobile: '+91 8448505951, +91 9625229816 '
 email: bathandkitchen@gmail.com
 slides:
   - image: /images/slide1.jpg
