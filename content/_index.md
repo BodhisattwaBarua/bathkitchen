@@ -10,7 +10,7 @@ seo_description: >-
   CPVC, UPVC, SWR Pipes, Kitchen fittings, Kitchen Sinks, Noida, Noida Sector
   110, Noida Sector 104, Noida Sector 93, Noida Sector 82
 paragrap_title: "Who are we \U0001F60A\U0001F60A"
-google_map_coordinates: '22.5720522,88.35130509999999'
+google_map_coordinates: '28.537477493286133,77.386474609375'
 business_name: The Bath & Kitchen
 address: >
   Numberdar Market, Shop No. #2, Gheja Road, Near Yatarth Hospital, Sector 110,
